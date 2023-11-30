@@ -1,0 +1,20 @@
+
+#------------------------------------------------------------------------------------------------
+SET UP GIT REPO ON LOCAL COMPUTER NOTES
+
+git config --global user.name "user1"
+git config --global user.email "donclaisse@yahoo.com"
+git config --list
+ssh-keygen -t rsa -b 4096 -C"donclaisse@yahoo.com"
+	put ssh pub key in github
+	
+git clone https://github.com/punchcard8012/github-demo.git
+
+ssh -T git@github.com
+#git remote set-url origin git@github.com:sweetsummertime/github-demo.git
+git remote set-url origin git@github.com:punchcard8012/github-demo.git
+#git@github.com:punchcard8012/github-demo.git (did not work gave error)
+git remote -v
+git push
+
+
